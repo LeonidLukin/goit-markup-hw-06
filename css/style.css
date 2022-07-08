@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', 'sans-serif';
+  font-family: "Roboto", "sans-serif";
   color: var(--text-color);
 }
 
@@ -54,7 +54,7 @@ p {
 }
 
 .active::after {
-  content: '';
+  content: "";
 
   display: block;
 
@@ -103,7 +103,7 @@ p {
   text-decoration: none;
   font-size: 26px;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 
   color: var(--btn-active);
   line-height: 1.5;
@@ -135,6 +135,8 @@ p {
 }
 
 .nav-icon {
+  display: flex;
+  align-items: center;
   letter-spacing: 0.02em;
   font-weight: 500;
   color: #757575;
@@ -190,8 +192,12 @@ p {
 }
 
 .overlay {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/header/headerBG.jpg');
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/header/headerBG.jpg");
   background-repeat: no-repeat;
 
   min-height: 600px;
@@ -268,6 +274,8 @@ p {
 .btn-close {
   cursor: pointer;
   position: absolute;
+  width: 30px;
+  height: 30px;
   font-size: 18px;
   top: 8px;
   right: 8px;
@@ -378,6 +386,7 @@ p {
 }
 
 .activity-item {
+  z-index: -1;
   width: 370px;
   position: relative;
 }
@@ -482,7 +491,8 @@ p {
   border-radius: 50%;
   fill: #afb1b8;
 
-  transition: fill var(--timing-function), background-color var(--timing-function);
+  transition: fill var(--timing-function),
+    background-color var(--timing-function);
 }
 
 .team-contacts-link:hover,
@@ -555,8 +565,8 @@ p {
   padding: 6px 20px;
   background-color: var(--btn-bg-color);
 
-  transition: background-color var(--timing-function), box-shadow var(--timing-function),
-    color var(--timing-function);
+  transition: background-color var(--timing-function),
+    box-shadow var(--timing-function), color var(--timing-function);
 
   /* transition-property: background-color, box-shadow, color;
   transition-duration: 250ms;
@@ -710,7 +720,7 @@ p {
   line-height: 1.5;
 
   color: var(--btn-active);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .logo-footer > span {
