@@ -219,8 +219,10 @@ p {
   margin: 0 auto 30px auto;
 }
 
-.hero-btn {
-  padding: 10px 30px;
+.hero-btn,
+.btn {
+  padding: 0 30px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -382,13 +384,13 @@ p {
   border: 1px solid rgb(0, 0, 0, 0.1);
   background-color: transparent;
 
-  transition: color var(--timing-function);
+  transition: fill var(--timing-function);
 }
 
 .btn-close:hover,
 .btn-close:focus {
   cursor: pointer;
-  color: var(--btn-active);
+  fill: var(--btn-active);
 }
 
 /* #endregion Hero*/
@@ -903,4 +905,41 @@ p {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* #endregion Footer */ ;
+/* subscribe */
+.subscribe {
+  margin: 0 0 0 auto;
+}
+
+.form-block {
+  display: flex;
+}
+
+.input-subscribe {
+  padding: 0 0 0 16px;
+  margin: 0 12px 0 0;
+  width: 358px;
+  min-height: 50px;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.icon-subscribe {
+  margin: 0 0 0 10px;
+  fill: #fff;
+}
+
+.sub-btn {
+  display: flex;
+  align-items: center;
+  /* padding: 0 30px; */
+}
+/* #endregion Footer */
