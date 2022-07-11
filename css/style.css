@@ -362,11 +362,11 @@ p {
 
 .check:hover + .check-box,
 .check:focus + .check-box {
-  background-image: url(/images/check/checkHover.svg);
+  background-image: url(../images/check/checkHover.svg);
 }
 
 .check:checked + .check-box {
-  background-image: url(/images/check/checked.svg);
+  background-image: url(../images/check/checked.svg);
 }
 
 .comment {
@@ -382,7 +382,7 @@ p {
   margin: 0 0 0 -1.2em;
   width: 1em;
   height: 1em;
-  background-image: url(/images/check/check.svg);
+  background-image: url(../images/check/check.svg);
   background-color: #fff;
 }
 
