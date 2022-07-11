@@ -369,6 +369,11 @@ p {
   background-color: #fff;
 }
 
+.check:hover + .check-box,
+.check:focus + .check-box {
+  background-image: url(/images/check/checkHover.svg);
+}
+
 .check:checked + .check-box {
   background-image: url(/images/check/checked.svg);
 }
@@ -377,6 +382,10 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.agreement:hover {
+  cursor: pointer;
 }
 
 .agreement-terms {
@@ -393,6 +402,13 @@ p {
   outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   border: none;
+
+  transition: outline var(--timing-function);
+}
+
+.form-textarea:hover,
+.form-textarea:focus {
+  outline: 1px solid var(--btn-active);
 }
 
 .form-textarea::placeholder {
