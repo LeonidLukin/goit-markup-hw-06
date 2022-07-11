@@ -360,15 +360,6 @@ p {
   appearance: none;
 }
 
-.check-box {
-  position: absolute;
-  margin: 0 0 0 -1.2em;
-  width: 1em;
-  height: 1em;
-  background-image: url(/images/check/check.svg);
-  background-color: #fff;
-}
-
 .check:hover + .check-box,
 .check:focus + .check-box {
   background-image: url(/images/check/checkHover.svg);
@@ -378,7 +369,25 @@ p {
   background-image: url(/images/check/checked.svg);
 }
 
+.comment {
+  margin: 0 0 20px 0;
+}
+
+.check-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin: 0 8px 0 0;
+  margin: 0 0 0 -1.2em;
+  width: 1em;
+  height: 1em;
+  background-image: url(/images/check/check.svg);
+  background-color: #fff;
+}
+
 .agreement {
+  margin: 0 0 0 8px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -407,7 +416,7 @@ p {
 }
 
 .form-textarea:hover,
-.form-textarea:focus {
+.form-textarea:hover {
   outline: 1px solid var(--btn-active);
 }
 
